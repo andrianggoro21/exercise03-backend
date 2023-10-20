@@ -1,18 +1,32 @@
 {
   "expense": [
     {
-      "name": "jambu",
-      "nominal": 1000,
+      "name": "pisang",
+      "nominal": 2000,
       "category": "buah",
-      "date": "2023-10-18T08:31:01.830Z",
+      "date": "20-10-2023",
       "id": 1
     },
     {
-      "name": "kol",
+      "name": "tomat",
       "nominal": 500,
       "category": "sayur",
-      "date": "2023-10-18T08:31:57.209Z",
+      "date": "20-10-2023",
       "id": 2
+    },
+    {
+      "name": "bawang",
+      "nominal": 1000,
+      "category": "sayur",
+      "date": "20-10-2023",
+      "id": 3
+    },
+    {
+      "name": "jambu",
+      "nominal": 5000,
+      "category": "buah",
+      "date": "20-10-2023",
+      "id": 4
     }
   ]
 }

@@ -7,7 +7,9 @@ const postExpense = async (name, nominal, category) => {
       name,
       nominal,
       category,
-      date: new Date(),
+      date: `${new Date().getDate()}-${
+        new Date().getUTCMonth() + 1
+      }-${new Date().getFullYear()}`,
     });
     return data;
   } catch (err) {
@@ -35,8 +37,48 @@ const getExpenseList = async () => {
   }
 };
 
+// // get list category
+// const getExpenseCategory = async () => {
+//   try {
+//     const { data } = await axios.get(`${process.env.JSON_URL}/expense`);
+//     return data;
+//   } catch (err) {
+//     throw err;
+//   }
+// };
+
+const getExpenseCategory = async (date, category) => {
+  try {
+    let url = `${process.env.JSON_URL}/expense`;
+    if (category) url = `${url}?category=${category}`;
+    if (date) url = `${url}?date=${date}`;
+    const { data } = await axios.get(`${url}`);
+    return data;
+  } catch (err) {
+    throw err;
+  }
+};
+
+const updatetExpense = async (name, nominal, category, id) => {
+  try {
+    const { data } = await axios.patch(
+      `${process.env.JSON_URL}/expense/${id}`,
+      {
+        name,
+        nominal,
+        category,
+      }
+    );
+    return data;
+  } catch (err) {
+    throw err;
+  }
+};
+
 module.exports = {
   postExpense,
   getExpense,
   getExpenseList,
+  getExpenseCategory,
+  updatetExpense,
 };
