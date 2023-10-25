@@ -1,0 +1,39 @@
+{
+  "expense": [
+    {
+      "name": "pisang",
+      "nominal": 2000,
+      "category": "buah",
+      "date": "20-10-2023",
+      "id": 1
+    },
+    {
+      "name": "tomat",
+      "nominal": 500,
+      "category": "sayur",
+      "date": "20-10-2023",
+      "id": 2
+    },
+    {
+      "name": "bawang",
+      "nominal": 1000,
+      "category": "sayur",
+      "date": "20-10-2023",
+      "id": 3
+    },
+    {
+      "name": "jambu",
+      "nominal": 5000,
+      "category": "buah",
+      "date": "20-10-2023",
+      "id": 4
+    },
+    {
+      "name": "daun bawang",
+      "nominal": 8000,
+      "category": "buah",
+      "date": "25-10-2023",
+      "id": 5
+    }
+  ]
+}
