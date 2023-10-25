@@ -1,18 +1,39 @@
 {
   "expense": [
     {
-      "name": "jambu",
-      "nominal": 1000,
-      "category": "buah",
-      "date": "2023-10-18T08:31:01.830Z",
-      "id": 1
-    },
-    {
-      "name": "kol",
+      "name": "tomat",
       "nominal": 500,
       "category": "sayur",
       "date": "2023-10-18T08:31:57.209Z",
       "id": 2
+    },
+    {
+      "name": "jambu",
+      "nominal": 2500,
+      "category": "buah",
+      "date": "2023-10-18T15:41:24.303Z",
+      "id": 3
+    },
+    {
+      "name": "anggur",
+      "nominal": 1500,
+      "category": "buah",
+      "date": "2023-10-18T15:42:09.712Z",
+      "id": 4
+    },
+    {
+      "name": "brokoli",
+      "nominal": 8500,
+      "category": "sayur",
+      "date": "2023-10-18T15:42:40.725Z",
+      "id": 5
+    },
+    {
+      "name": "wortel",
+      "nominal": 3500,
+      "category": "sayur",
+      "date": "2023-10-18T16:10:19.333Z",
+      "id": 7
     }
   ]
 }
