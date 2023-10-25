@@ -4,6 +4,9 @@ const {
   getExpenseList,
   getExpenseCategory,
   updatetExpense,
+  updateExpense,
+  deleteExpense,
+  getExpensesesQuery
 } = require("../queries/expenseQuery");
 
 const expenseService = async (name, nominal, category) => {
@@ -17,7 +20,8 @@ const expenseService = async (name, nominal, category) => {
 
 const getExpenseService = async (id) => {
   try {
-    const expense = await getExpense(id);
+    const expense = await getExpensesesQuery();
+    // const expense = await getExpense(id);
     return expense;
   } catch (err) {
     throw err;
@@ -77,6 +81,23 @@ const updatetExpenseService = async (name, nominal, category, id) => {
     throw err;
   }
 };
+const updateExpenseService = async (name, nominal, category, id) => {
+    try {
+      const expense = await updateExpense(name, nominal, category, id);
+      return expense;
+    } catch (err) {
+      throw err;
+    }
+  };
+
+  const deleteExpenseService = async (id) => {
+    try {
+      const {data} = await deleteExpense(id);
+      return data;
+    } catch (err) {
+      throw err;
+    }
+  };
 
 module.exports = {
   expenseService,
@@ -84,4 +105,6 @@ module.exports = {
   getExpenseServiceList,
   getExpenseServiceCategory,
   updatetExpenseService,
+  updateExpenseService,
+  deleteExpenseService,
 };
