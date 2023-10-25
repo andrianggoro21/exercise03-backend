@@ -27,6 +27,13 @@
       "category": "buah",
       "date": "20-10-2023",
       "id": 4
+    },
+    {
+      "name": "daun bawang",
+      "nominal": 8000,
+      "category": "buah",
+      "date": "25-10-2023",
+      "id": 5
     }
   ]
 }

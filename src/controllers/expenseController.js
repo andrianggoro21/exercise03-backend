@@ -3,7 +3,6 @@ const {
   getExpenseService,
   getExpenseServiceList,
   getExpenseServiceCategory,
-  updatetExpenseService,
   updateExpenseService,
   deleteExpenseService,
 } = require("../services/expenseService");
@@ -84,11 +83,6 @@ const getExpenseControllerCategory = async (req, res) => {
 
 const updateExpenseController = async (req, res) => {
   try {
-    const { name, nominal, category, id } = req.query;
-    const dataExpense = await updatetExpenseService(name, nominal, category, id);
-    res.status(200).json({
-const updateExpenseController = async (req, res) => {
-  try {
     const { name, nominal, category, id } = req.query
     const dataExpense = await updateExpenseService(name, nominal, category, id);
     return res.status(200).json ({
@@ -122,7 +116,6 @@ module.exports = {
   getExpenseController,
   getExpenseControllerList,
   getExpenseControllerCategory,
-  updateExpenseController
   updateExpenseController,
   deleteExpenseController,
 };
